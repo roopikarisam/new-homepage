@@ -1,0 +1,25 @@
+{% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
+
+<div class="cover-card table-cell table-middle">
+  {% if author.avatar %}
+  <a href="{{ site.url }}/new-digital-worlds.html">
+    <img src="{{ site.url }}/img/{{ author.avatar }}" alt="" class="avatar">
+  </a>
+  {% endif %}
+  <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
+  <span class="author_job">{{ author.job }}</span>
+
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="{{ site.url }}/">about <font color="#384e5d">/</font></a>
+        <a href="{{ site.url }}/new-digital-worlds.html"> new digital worlds <font color="#384e5d">/</font> </a>
+        <a href="{{ site.url }}/research.html"> research <font color="#384e5d">/</font> </a><br>
+        <a href="{{ site.url }}/teaching.html"> teaching <font color="#384e5d">/</font> </a>
+        <a href="{{ site.url }}/events.html"> events <font color="#384e5d">/</font> </a>
+        <a href="{{ site.url }}/media.html"> media <font color="#384e5d">/</font> </a>
+        <a href="{{ site.url }}/contact.html"> contact <font color="#384e5d">/</font> </a>
+      </li>
+    </ul>
+  </nav>
+</div>
